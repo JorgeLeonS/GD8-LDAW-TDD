@@ -11,9 +11,25 @@ class BankAccount{
 
     append(value){
         let newSaldo = value > 0 ? this.saldo + value : this.saldo;
-        // this.saldo = value value > 0 ? this.saldo + value : this.saldo;> 0 ? this.saldo + value : this.saldo;
-        this.history.push = ({type:'append', value: value});
+        this.saldo = newSaldo;
+        this.history.push({type:'append', value: value, newSaldo: newSaldo});
         return newSaldo;
+    }
+
+    substract(value){
+        let newSaldo = value > 0 ? this.saldo - value : this.saldo;
+        this.saldo = newSaldo;
+        this.history.push({type:'substract', value: value, newSaldo: newSaldo});
+        return newSaldo;
+    }
+
+    getHistory(){
+        return this.history;
+    }
+
+    merge(newAccount){
+        this.saldo = this.saldo+newAccount.saldo;
+        this.history = this.history.concat(newAccount.getHistory());
     }
 
 }
