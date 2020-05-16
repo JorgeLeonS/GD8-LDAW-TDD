@@ -1,0 +1,23 @@
+{
+  "name": "GD8-LDAW-TDD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeLeonS/GD8-LDAW-TDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeLeonS/GD8-LDAW-TDD/issues"
+  },
+  "homepage": "https://github.com/JorgeLeonS/GD8-LDAW-TDD#readme",
+  "dependencies": {
+    "mocha": "^7.1.2"
+  }
+}
